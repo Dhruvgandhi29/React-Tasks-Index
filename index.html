@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>React Tasks</title>
+    <style>
+      .background {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 30s ease infinite;
+        width: 100%;
+        min-height: 100vh;
+        min-width: 100vw;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background d-flex justify-content-center align-items-center">
+      <div
+        class="d-flex flex-column mx-4 text-dark border border-dark border-3"
+        style="width: 100%; height: 100%"
+      >
+        <div
+          class="row py-2 text-center"
+          style="border-bottom: solid black; margin: 0 0px"
+        >
+          <div class="col-md-2"><h2 class="fw-bold">SNo.</h2></div>
+          <div class="col-md-3"><h2 class="fw-bold">Tasks</h2></div>
+          <div class="col-md-3">
+            <h2 class="fw-bold">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+              GitHub
+            </h2>
+          </div>
+          <div class="col-md-4">
+            <h2 class="fw-bold">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-boxes"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
+                />
+              </svg>
+              Deployment
+            </h2>
+          </div>
+        </div>
+        <div class="row text-center py-1">
+          <div class="col-md-2">
+            <p style="font-size: x-large">1.</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">Word Counter</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">
+              <a
+                class="link-warning"
+                href="https://github.com/Dhruvgandhi29/React-Word-Counter "
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p style="font-size: x-large">
+              <a
+                class="link-info"
+                href="https://react-word-counter-pearl.vercel.app/ "
+                target="_blank"
+              >
+                Deploy
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="row text-center py-1">
+          <div class="col-md-2">
+            <p style="font-size: x-large">2.</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">Calculator</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">
+              <a
+                class="link-warning"
+                href="https://github.com/Dhruvgandhi29/React-Calculator "
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p style="font-size: x-large">
+              <a
+                class="link-info"
+                href="https://react-calculator-one-omega.vercel.app/ "
+                target="_blank"
+              >
+                Deploy
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="row text-center py-1">
+          <div class="col-md-2">
+            <p style="font-size: x-large">3.</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">Color-Picker</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">
+              <a
+                class="link-warning"
+                href="https://github.com/Dhruvgandhi29/React-Colour-Picker "
+              >
+                GitHub
+              </a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p style="font-size: x-large">
+              <a
+                class="link-info"
+                href="https://react-colour-picker-nine.vercel.app/ "
+              >
+                Deploy
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="row text-center py-1">
+          <div class="col-md-2">
+            <p style="font-size: x-large">4.</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">Data Extraction</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">
+              <a
+                class="link-warning"
+                href="https://github.com/Dhruvgandhi29/React-DataExtraction "
+              >
+                GitHub
+              </a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p style="font-size: x-large">
+              <a
+                class="link-info"
+                href="https://react-data-extraction.vercel.app/ "
+              >
+                Deploy
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="row text-center py-1">
+          <div class="col-md-2">
+            <p style="font-size: x-large">5.</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">Age Calculator</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">
+              <a
+                class="link-warning"
+                href="https://github.com/Dhruvgandhi29/React-AgeCalculator"
+              >
+                GitHub
+              </a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p style="font-size: x-large">
+              <a
+                class="link-info"
+                href="https://react-age-calculator-delta.vercel.app/ "
+              >
+                Deploy
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="row text-center py-1">
+          <div class="col-md-2">
+            <p style="font-size: x-large">6.</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">Portfolio</p>
+          </div>
+          <div class="col-md-3">
+            <p style="font-size: x-large">
+              <a
+                class="link-warning"
+                href="https://github.com/Dhruvgandhi29/React-Portfolio "
+              >
+                GitHub
+              </a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p style="font-size: x-large">
+              <a
+                class="link-info"
+                href="https://react-portfolio-one-olive.vercel.app/ "
+              >
+                Deploy
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
